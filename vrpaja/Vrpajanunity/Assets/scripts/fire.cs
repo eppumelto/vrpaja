@@ -6,9 +6,14 @@ public class fire : MonoBehaviour
 {
     public bool isOnFire;
     public static bool isFlameable;
-    public float firetime;
+
+    public float firetime = 0f;
+    public float heat = 0f;
+
     public GameObject nuotioTrigger;
-    public int maara;
+    public GameObject Tuli;
+    public int maara = 0;
+
 
     //tarkista montako halkoa on ja pienin määrä on 3
     void Start()
@@ -16,17 +21,63 @@ public class fire : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-         maara = GameObject.FindGameObjectsWithTag("wood").Length;
-        if (maara >= 3)
+        if (other.tag == "wood")
         {
-            isFlameable = true;
+
+            maara += 1;
+            firetime += 3.0f;
         }
     }
+
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "wood")
+        {
+
+            maara -= 1;
+            
+        }
+    }
+
+    private void FireTime()
+    {
+        firetime -= Time.deltaTime;
+        heat += Time.deltaTime;
+    }
+
 
     void Update()
     {
         
+
+        if (maara >= 3)
+        {
+            isFlameable = true;
+        }
+
+        else
+        {
+            isFlameable = false;
+            sytytin.Osuma = false;
+        }
+        if (sytytin.Osuma == true)
+        {
+            Tuli.SetActive(true);
+            FireTime();
+            if (firetime <= 0f)
+            {
+                sytytin.Osuma = false;
+                firetime = 0;
+            }
+        }
+        else
+        {
+            Tuli.SetActive(false);
+        }
+
+       
     }
 }

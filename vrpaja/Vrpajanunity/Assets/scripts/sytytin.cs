@@ -5,7 +5,13 @@ using UnityEngine;
 public class sytytin : MonoBehaviour
 {
     public GameObject Liekki;
-    public GameObject Tuli;
+    public static bool Osuma;
+
+    public void Start()
+    {
+        Osuma = false;
+    }
+
     public void Update()
     {   
       
@@ -18,11 +24,11 @@ public class sytytin : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, Mathf.Infinity)&& hit.transform.tag =="wood" &&  fire.isFlameable == true) {
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, Mathf.Infinity)&& hit.transform.tag =="nuotio" &&  fire.isFlameable == true) {
 
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.up) * hit.distance, Color.yellow);
             Debug.Log("Did Hit");
-            Tuli.SetActive(true);
+            Osuma = true;
            
         }
 
@@ -33,5 +39,6 @@ public class sytytin : MonoBehaviour
     public void NoShoot()
     {
         Liekki.SetActive(false);
+      
     }
 }

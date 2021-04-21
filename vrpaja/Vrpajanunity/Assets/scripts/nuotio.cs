@@ -20,7 +20,7 @@ public class nuotio : XRSocketInteractor
             //otan interactablen ja poistan grab koodin
             Destroy(interactable.GetComponent<XRGrabInteractable>());
             Destroy(interactable.GetComponent<Rigidbody>());
-            //Destroy(testi);
+            
         }
         return base.CanSelect(interactable) && MatchUsingTag(interactable);
     }
