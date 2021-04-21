@@ -18,8 +18,9 @@ public class nuotio : XRSocketInteractor
         if(interactable.tag == "wood")
         {
             //otan interactablen ja poistan grab koodin
-            testi = interactable.GetComponent<XRGrabInteractable>();
-            Destroy(testi);
+            Destroy(interactable.GetComponent<XRGrabInteractable>());
+            Destroy(interactable.GetComponent<Rigidbody>());
+            //Destroy(testi);
         }
         return base.CanSelect(interactable) && MatchUsingTag(interactable);
     }
