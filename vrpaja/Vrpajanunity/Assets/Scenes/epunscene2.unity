@@ -855,6 +855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coal: {fileID: 7259685678119112795, guid: 4b783dd181aaf00419bb03e990b0c17d, type: 3}
   spawnPos: {fileID: 80494536}
+  time: 0
+  delay: 0
 --- !u!114 &163193874
 MonoBehaviour:
   m_ObjectHideFlags: 0
