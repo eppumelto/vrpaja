@@ -6,11 +6,13 @@ public class hiilisakki : MonoBehaviour
 {
     public GameObject coal;
     public Transform spawnPos;
+    
 
     public float time;
     public float delay;
+    public int limit = 25;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         
@@ -18,17 +20,26 @@ public class hiilisakki : MonoBehaviour
 
     void Spawn ()
     {
-        Instantiate(coal, transform.position, transform.rotation);
+        limit = limit - 1;
+        Instantiate(coal, spawnPos.transform.position, spawnPos.transform.rotation);
 
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        if (transform.eulerAngles.y >= 90 && transform.eulerAngles.y <= 180)
+        if (transform.eulerAngles.z >= 80 && transform.eulerAngles.z <= 180 && limit >= 0)
         {
             InvokeRepeating("Spawn", time, delay);
         }
+
+
+
+        //if (transform.eulerAngles.y >= 90 && transform.eulerAngles.y <= 180)
+        //{
+        //    InvokeRepeating("Spawn", time, delay);
+        //}
+
     }
 }

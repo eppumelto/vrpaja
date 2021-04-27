@@ -18,7 +18,7 @@ public class Clothes : XRSocketInteractor
     }
 
     private bool MatchUsingTag(XRBaseInteractable interactable)
-    {
+    {   
         return interactable.CompareTag(targetTag);
     }
   
