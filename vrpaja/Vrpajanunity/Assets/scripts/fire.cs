@@ -29,6 +29,12 @@ public class fire : MonoBehaviour
             maara += 1;
             firetime += 3.0f;
         }
+
+        if (other.tag == "coal")
+        {
+
+            //do things
+        }
     }
 
 

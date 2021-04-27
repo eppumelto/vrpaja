@@ -26,7 +26,7 @@ public class hiilisakki : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.eulerAngles.y >= 0 && transform.eulerAngles.y <= 180)
+        if (transform.eulerAngles.y >= 90 && transform.eulerAngles.y <= 180)
         {
             InvokeRepeating("Spawn", time, delay);
         }
