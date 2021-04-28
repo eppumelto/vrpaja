@@ -32,7 +32,7 @@ public class fire : MonoBehaviour
 
         if (other.tag == "coal")
         {
-
+            firetime += 5f;
             //do things
         }
     }

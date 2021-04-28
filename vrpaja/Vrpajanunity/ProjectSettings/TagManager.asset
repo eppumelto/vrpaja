@@ -9,6 +9,7 @@ TagManager:
   - Suojaimet
   - wood
   - nuotio
+  - coal
   layers:
   - Default
   - TransparentFX

@@ -2474,6 +2474,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4392532530449153066, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: useUnscaledTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530449153067, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530449153067, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4392532530449153069, guid: 756536af6b763b943ba73f338e955b71,
         type: 3}
       propertyPath: m_RootOrder
@@ -2502,7 +2517,7 @@ PrefabInstance:
     - target: {fileID: 4392532530449153069, guid: 756536af6b763b943ba73f338e955b71,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.91
+      value: 2.92
       objectReference: {fileID: 0}
     - target: {fileID: 4392532530449153069, guid: 756536af6b763b943ba73f338e955b71,
         type: 3}
