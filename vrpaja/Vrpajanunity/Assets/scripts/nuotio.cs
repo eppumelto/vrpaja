@@ -7,6 +7,7 @@ public class nuotio : XRSocketInteractor
 {
     public string targetTag = string.Empty;
     private Component testi;
+    
 
     public override bool CanHover(XRBaseInteractable interactable)
     {

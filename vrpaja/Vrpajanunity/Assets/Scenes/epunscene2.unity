@@ -855,9 +855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coal: {fileID: 7259685678119112795, guid: 4b783dd181aaf00419bb03e990b0c17d, type: 3}
   spawnPos: {fileID: 80494536}
-  time: 0
-  delay: 0
-  limit: 50
+  timerAika: 0.7
+  limit: 100
 --- !u!114 &163193874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,7 +889,18 @@ MonoBehaviour:
       m_Calls: []
   m_OnSelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 163193873}
+        m_MethodName: Kadessa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -6418,7 +6428,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.7
-  m_Radius: 0.33
+  m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.94
