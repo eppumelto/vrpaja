@@ -28,6 +28,11 @@ public class fire : MonoBehaviour
 
             maara += 1;
             firetime += 3.0f;
+
+            if (firetime == 0f)
+            {
+                Destroy(other);
+            }
         }
 
         if (other.tag == "coal")
@@ -37,6 +42,15 @@ public class fire : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        
+        if(other.CompareTag("wood") && firetime == 0)
+        {
+            Destroy(other.gameObject);
+        }
+
+    }
 
     private void OnTriggerExit(Collider other)
     {
@@ -75,8 +89,12 @@ public class fire : MonoBehaviour
             FireTime();
             if (firetime <= 0f)
             {
+               
                 sytytin.Osuma = false;
                 firetime = 0;
+
+                
+
             }
         }
         else
