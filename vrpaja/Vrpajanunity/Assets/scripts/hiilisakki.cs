@@ -18,7 +18,7 @@ public class hiilisakki : MonoBehaviour
     void Start()
     {
         //jos ei toimi voi poistaa
-        reference = GameObject.Find("Hiilisakki").GetComponent<XRGrabInteractable>().trackPosition;
+       
         
     }
 
@@ -39,6 +39,7 @@ public class hiilisakki : MonoBehaviour
     
     void Update()
     {
+        reference = GameObject.Find("Hiilisakki").GetComponent<XRGrabInteractable>().isSelected;
 
         if (transform.eulerAngles.z >= 80 && transform.eulerAngles.z <= 180 && limit >= 0)
         {
