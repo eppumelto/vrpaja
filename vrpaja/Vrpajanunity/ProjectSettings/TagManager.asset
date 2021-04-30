@@ -5,11 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Gearit
-  - Cube
   - Suojaimet
   - wood
   - nuotio
   - coal
+  - Lasit
   layers:
   - Default
   - TransparentFX
