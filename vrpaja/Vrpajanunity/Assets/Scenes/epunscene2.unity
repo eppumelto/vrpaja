@@ -2851,6 +2851,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1771309101}
     m_Modifications:
+    - target: {fileID: 4392532530328985902, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530328985902, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 0.27254605
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530328985902, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
+      value: 0.28377652
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530328985902, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0.40540504
+      objectReference: {fileID: 0}
     - target: {fileID: 4392532530449153064, guid: 756536af6b763b943ba73f338e955b71,
         type: 3}
       propertyPath: m_Name
@@ -2904,7 +2924,7 @@ PrefabInstance:
     - target: {fileID: 4392532530449153069, guid: 756536af6b763b943ba73f338e955b71,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.92
+      value: 2.95
       objectReference: {fileID: 0}
     - target: {fileID: 4392532530449153069, guid: 756536af6b763b943ba73f338e955b71,
         type: 3}
@@ -2945,6 +2965,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530494374181, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530494374181, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530494374181, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 0.19679898
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530494374181, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
+      value: 0.43243143
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532530494374181, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0.3243244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532531132366634, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532531132366634, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532531132366634, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532531132366634, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 0.33677095
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532531132366634, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392532531132366634, guid: 756536af6b763b943ba73f338e955b71,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0.41891795
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756536af6b763b943ba73f338e955b71, type: 3}

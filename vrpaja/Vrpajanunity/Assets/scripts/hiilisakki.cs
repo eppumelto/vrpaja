@@ -12,22 +12,12 @@ public class hiilisakki : MonoBehaviour
     private float timer = 1f;
     public float timerAika = 10f;
     public int limit = 25;
-    //jos ei toimi voi poistaa
-    private bool reference;
 
-    void Start()
-    {
-        //jos ei toimi voi poistaa
-       
-        
-    }
-
-
-    //Eli kun se trackaa sen positiota LUULEN että se on kädessä ja silloin kaikki toimii
+    //Otin boolin mikä katsoo onko object valittu ja jos on niin silloin hiilisakista voi tippua hiilia
+    //Myös timer minkä mukaan se tiputtaa hiilia ettei ne pursua liian nopeasti
     void Spawn ()
     {
-        //tee timer mikä spawnaa hiiltä
-        if (timer <= 0 && reference == true)
+        if (timer <= 0 && GetComponent<XRGrabInteractable>().isSelected)
         {
             Instantiate(coal, spawnPos.transform.position, spawnPos.transform.rotation);
             timer = timerAika;
@@ -39,7 +29,7 @@ public class hiilisakki : MonoBehaviour
     
     void Update()
     {
-        reference = GameObject.Find("Hiilisakki").GetComponent<XRGrabInteractable>().isSelected;
+        //reference = GameObject.Find("Hiilisakki").GetComponent<XRGrabInteractable>().isSelected;
 
         if (transform.eulerAngles.z >= 80 && transform.eulerAngles.z <= 180 && limit >= 0)
         {
