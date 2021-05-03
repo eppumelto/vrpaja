@@ -20,7 +20,12 @@ public class Clothes : XRSocketInteractor
 
     private bool MatchUsingTag(XRBaseInteractable interactable)
     {
+<<<<<<< HEAD
         if (gameObject.CompareTag("cube") && socketActive == false)
+=======
+        //Tarkistaa onko peli objecti suojalasit jos on katsoo onko Socket active jos on niin poistaa lasit
+        if (gameObject.CompareTag("Lasit") && socketActive == true)
+>>>>>>> 983ffbb771216c7ee89bbbb01a62ab2cfc3f8d9a
         {
             Destroy(interactable);
         }

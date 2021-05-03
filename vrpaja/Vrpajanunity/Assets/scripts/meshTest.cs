@@ -142,11 +142,11 @@ public class meshTest : MonoBehaviour
             //back
            point1.transform.position, point2.transform.position, point3.transform.position, point4.transform.position,
             //right
-            point2.transform.position, point6.transform.position, point7.transform.position, point3.transform.position,
+            point2.transform.position, point6.transform.position, point4.transform.position, point8.transform.position,
             //front
            point5.transform.position, point6.transform.position, point7.transform.position, point8.transform.position,
             //left
-            point5.transform.position, point1.transform.position, point4.transform.position, point8.transform.position,
+            point5.transform.position, point1.transform.position, point7.transform.position, point3.transform.position,
             //up
             point1.transform.position, point5.transform.position, point6.transform.position, point2.transform.position,
             //down
