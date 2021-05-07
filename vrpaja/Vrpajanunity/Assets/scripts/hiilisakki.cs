@@ -13,6 +13,8 @@ public class hiilisakki : MonoBehaviour
     public float timerAika = 10f;
     public int limit = 25;
 
+   
+
     //Otin boolin mikä katsoo onko object valittu ja jos on niin silloin hiilisakista voi tippua hiilia
     //Myös timer minkä mukaan se tiputtaa hiilia ettei ne pursua liian nopeasti
     void Spawn ()

@@ -8,7 +8,9 @@ public class Clothes : XRSocketInteractor
 {
     public string targetTag = string.Empty;
     public GameObject lasit;
-    
+    public Image img;
+
+   
 
     public override bool CanHover(XRBaseInteractable interactable)
     {
@@ -30,10 +32,11 @@ public class Clothes : XRSocketInteractor
     {
         //päässä, muokkaa lasien väriä
 
+
         if (lasit != null)
         {
             lasit.SetActive(false);
-            
+            img.enabled = true;
             
             //mainCamera.color juttuja VAIHDA
         }
@@ -46,7 +49,7 @@ public class Clothes : XRSocketInteractor
         if(lasit != null)
         {
             lasit.SetActive(true);
-
+            img.enabled = false;
             //mainCamera normaaliksi
         }
        
