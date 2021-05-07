@@ -14,7 +14,6 @@ public class sytytin : MonoBehaviour
 
     public void Update()
     {   
-      
         
     }
     public void Shoot ()
