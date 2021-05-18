@@ -10,6 +10,7 @@ TagManager:
   - nuotio
   - coal
   - Lasit
+  - metalli
   layers:
   - Default
   - TransparentFX
