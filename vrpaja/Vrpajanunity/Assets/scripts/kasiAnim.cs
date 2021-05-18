@@ -17,6 +17,8 @@ public class kasiAnim : MonoBehaviour
 
     private Animator animator;
     private InputDevice inputDevice;
+
+
     private float indexvalue;
     private float ThumbValue;
     private float kolmeSormeaValue;
@@ -25,6 +27,7 @@ public class kasiAnim : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        inputDevice = GetInputDevice();
     }
 
     void Update()
@@ -79,7 +82,7 @@ public class kasiAnim : MonoBehaviour
        
 
         animator.SetFloat("index", indexvalue);
-        animator.SetFloat("3Sormea", kolmeSormeaValue);
+        animator.SetFloat("fist", kolmeSormeaValue);
         animator.SetFloat("Thumb", ThumbValue);
     }
 }
